@@ -1,0 +1,46 @@
+body{
+	background-color: black;
+	color: white;
+	font-family: Arial,sans-serif;
+	padding: 30px;
+}
+h1{
+	color: skyblue;
+}
+h2{
+	color: lightblue;
+}
+p{
+	color: lightgray;
+	line-height: 1.6;
+}
+a{
+	color: deepskyblue;
+}
+a:hover {
+	color: white;
+}
+hr{
+	border: 0;
+	border-top: 1px solid gray;
+}
+pre.source-code{
+	background-color: darkslategray;
+	color: white;
+	border: 1px solid gray;
+	border-radius: 8px;
+	padding: 20px;
+	overflow-x: auto;
+	font-family: Consolas,monospace;
+	line-height: 1.5;
+}
+pre.output{
+	background-color: black;
+	color: lightgreen;
+	border: 2px solid gray;
+	border-radius: 8px;
+	padding: 20px;
+	overflow-x: auto;
+	font-family: Consolas,monospace;
+	line-height: 1.5;
+}
