@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program 01</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<h1>Program 01 - Pointer and Array</h1>
+	<hr>
+	<h2>Problem Statement</h2>
+	<p>Write a program in which a pointer points to an array and insert value from user through pointer.</p>
+	
+	<h2>Source Code</h2>
+	<pre class="source-code">
+#include &lt;stdio.h&gt;
+
+void main()
+{
+	int a[5], i;
+	int *p;
+
+	p = a;
+
+	for(i = 1; i <= 5; i++)
+	{
+		printf("Enter %d value: ", i);
+		scanf("%d", p);
+		p++;
+	}
+
+	p = a;
+
+	printf("\nArray values: ");
+	for(i = 1; i <= 5; i++)
+	{
+		printf("%d ", *p);
+		p++;
+	}
+}
+	</pre>
+	<h2>Output</h2>
+	<pre class="output">
+C:\TURBOC3\BIN&gt;TC
+
+Enter 1 value: 55
+Enter 2 value: 66
+Enter 3 value: 77
+Enter 4 value: 88
+Enter 5 value: 99
+
+Array values: 55 66 77 88 99
+</pre>
+	<p><a href="index.html">&larr; Back to Program List</a></p>
+	<p><a href="../index.html">&larr; Back to Home</a></p>
+
+</body>
+</html>
