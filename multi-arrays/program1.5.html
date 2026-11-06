@@ -43,7 +43,7 @@ void main()
 	{
 		for(j = 0; j<=1; j++)
 		{
-			c[i][j] = 0;
+			multi[i][j] = 0;
 			for(k = 0; k <= 1; k++)
 			{
 				multi[i][j] = multi[i][j] + num[i][k] * b[k][j];
@@ -57,7 +57,7 @@ void main()
 	{
 		for(j = 0; j<=1; j++)
 		{
-			printf("%d ",&multi[i][j]);
+			printf("%d ",multi[i][j]);
 		}
 		printf("\n");
 	}	
