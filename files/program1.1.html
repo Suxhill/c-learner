@@ -27,7 +27,7 @@ void main()
 	New = fopen(f,"w");
 	for(i = 0; data[i] != '\0'; i++)
 	{
-		if(data >= 'a' && data[i] <= 'z')
+		if(data[i] >= 'a' && data[i] <= 'z')
 		data[i] = data[i] - 32;
 	}
 	fprintf(New , "%s", data);
