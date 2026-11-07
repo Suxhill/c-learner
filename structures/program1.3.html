@@ -24,7 +24,7 @@ struct emp
 void main()
 {
 	struct emp e[50];
-	int i;
+	int i, j;
 
 	for(i = 0; i < 50; i++)
 	{
@@ -42,12 +42,17 @@ void main()
 
 	printf("\n\nEMPLOYEE DETAILS\n");
 	printf("------------------\n");
-	printf("ID\tNAME\n");
+	printf("ID\tNAME CHARACTERS\n");
 	printf("------------------\n");
 
 	for(i = 0; i < 50; i++)
 	{
-	  printf("%d\t%-15s\t%s\n", e[i].id, e[i].name, e[i].designation);
+	  printf("%d\t", e[i].id);
+		for(j = 0; e[i].name[j] != '\0'; j++)
+		{
+		  printf("%c ",e[i].name[j]);
+		}
+	  printf("\n");
 	}
 }
 	</pre>
@@ -68,10 +73,10 @@ Enter Designation: Clerk
 
 EMPLOYEE DETAILS
 ------------------
-ID	NAME	
+ID	NAME CHARACTERS	
 ------------------
-101	Gagan	
-102	Aniket	
+101	G a g a n	
+102	A n i k e t	
 ...
 </pre>
 	<p><a href="index.html">&larr; Back to Program List</a></p>
